@@ -16,14 +16,24 @@
     <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Comunes\Clases\Constantes\" />
     <None Remove="Comunes\Clases\Exepciones\" />
+    <None Remove="Infraestructura\Usuarios\" />
+    <None Remove="Dominio\services\Usuarios\" />
+    <None Remove="Comunes\Clases\Helper\" />
+    <None Remove="Dominio\services\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Comunes\Clases\Constantes\" />
     <Folder Include="Comunes\Clases\Exepciones\" />
+    <Folder Include="Infraestructura\Usuarios\" />
+    <Folder Include="Dominio\services\Usuarios\" />
+    <Folder Include="Comunes\Clases\Helper\" />
+    <Folder Include="Dominio\services\Login\" />
   </ItemGroup>
 </Project>

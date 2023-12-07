@@ -8,5 +8,6 @@ namespace todoAPI.Comunes.Clases.Contracts
     public class TodoDTOContract
     {
         public string nombre {get;set;} = null!;
+        public string? usuarioId { get; set; } 
     }
 }
