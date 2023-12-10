@@ -81,7 +81,8 @@ namespace todoAPI.Dominio.services.Todo
                 {
                     Id = todoActual.Id,
                     nombre = entity.nombre,
-                    completada = entity.completada
+                    completada = entity.completada,
+                    usuarioId = entity.usuarioId
                 };
                 await _crudService.ModifyAsync(todoModificado);
                 return _mapper.Map<TodoContract>(todoModificado);
