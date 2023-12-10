@@ -51,5 +51,11 @@ namespace todoAPI.Controllers
             await _servicio.RemoveAsync(id);
             return Ok(TodoConstantes.registroElimnado);
         }
+
+        [HttpGet("userid/{idU}")]
+        public async Task<IActionResult> obtenerTodoPorIdUsusrio(string idU)
+        {
+            return Ok(await _todoService.GetTodoByIDUser(idU));
+        }
     }
 }

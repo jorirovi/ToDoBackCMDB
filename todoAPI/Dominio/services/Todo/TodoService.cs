@@ -30,7 +30,8 @@ namespace todoAPI.Dominio.services.Todo
                 TodoEntity creaTodo = new TodoEntity
                 {
                     nombre = entity.nombre,
-                    completada = ((int)(EstadoTodo.no_completado))
+                    completada = ((int)(EstadoTodo.no_completado)),
+                    usuarioId = entity.usuarioId
                 };
                 await _crudService.CreateAsync(creaTodo);
                 return entity;
@@ -52,6 +53,19 @@ namespace todoAPI.Dominio.services.Todo
             if (todoById != null)
             {
                 return _mapper.Map<TodoContract>(todoById);
+            }
+            else
+            {
+                throw new Exception(TodoConstantes.registroNoEncontrado);
+            }
+        }
+
+        public async Task<List<TodoContract>> GetTodoByIDUser(string idU)
+        {
+            List<TodoEntity> todosbyUser = await _todo.GetTodoByIdUser(idU);
+            if (todosbyUser != null)
+            {
+                return _mapper.Map<List<TodoContract>>(todosbyUser);
             }
             else
             {

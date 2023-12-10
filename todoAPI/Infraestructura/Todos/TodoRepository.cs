@@ -37,6 +37,11 @@ namespace todoAPI.Infraestructura.Todos
             return await _collection.Find(t => t.nombre == todo).FirstOrDefaultAsync();
         }
 
+        public async Task<List<TodoEntity>> GetTodoByIdUser(string idU)
+        {
+            return await _collection.Find(t => t.usuarioId == idU).ToListAsync();
+        }
+
         public async Task<TodoEntity> ModifyAsync(TodoEntity entity)
         {
             await _collection.ReplaceOneAsync(t => t.Id == entity.Id, entity);
