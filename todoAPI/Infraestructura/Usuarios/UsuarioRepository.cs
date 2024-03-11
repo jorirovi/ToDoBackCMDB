@@ -6,6 +6,9 @@ namespace todoAPI.Infraestructura.Usuarios
 {
     public class UsuarioRepository : ICrudRepository<UsuarioEntity>, IUsuarioRepository
 	{
+        /// <summary>
+        /// conexion con la bd de MongoDB
+        /// </summary>
         private readonly IMongoCollection<UsuarioEntity> _collection;
         public UsuarioRepository(IConfiguration configuration)
 		{

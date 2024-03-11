@@ -14,6 +14,8 @@ using todoAPI.models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using todoAPI.Infraestructura.TipoProducto;
+using todoAPI.Dominio.services.TipoProducto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -76,6 +78,10 @@ builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ICrudService<UsuarioContract>, UsuarioService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ICrudRepository<TipoProductoEntity>, TipoProductoRepository>();
+builder.Services.AddScoped<ITipoProductoRepository, TipoProductoRepository>();
+builder.Services.AddScoped<ICrudService<TipoProductoContract>,TipoProductoService>();
+builder.Services.AddScoped<ITipoProductoService,TipoProductoService>();
 #endregion
 
 

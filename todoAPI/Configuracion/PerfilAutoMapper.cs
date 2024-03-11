@@ -12,6 +12,8 @@ namespace todoAPI.Mapper
             CreateMap<TodoEntity,TodoDTOContract>().ReverseMap();
             CreateMap<UsuarioEntity, UsuarioContract>().ReverseMap();
             CreateMap<UsuarioEntity, UsuarioTDOContract>().ReverseMap();
+            CreateMap<TipoProductoEntity, TipoProductoContract>().ReverseMap();
+            CreateMap<TipoProductoEntity, TipoProductoDTOContract>().ReverseMap();
         }
         
     }
