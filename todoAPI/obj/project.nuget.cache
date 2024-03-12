@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "tdH6uj7miLSd4drEqTZJXfQTKf0+AYHE9dYbZfuBXj8leBFdBWjvQpTRF/bUNuCgy8z3FOHVm4af1vdb++PAlg==",
-  "success": true,
+  "dgSpecHash": "6lAqEiQOh1SW7lej5MwYiMqFLpn2uDXsNMeLlntgWBRJPxjzJ0GWI10KvEIsuxXUmiF1LKi50M0Wc5pwMNQ4uw==",
+  "success": false,
   "projectFilePath": "/Users/jorgeromero/Documents/Desarrollo/CSharp/ToDoApp/ToDoBackCMDB/todoAPI/todoAPI.csproj",
   "expectedPackageFiles": [
     "/Users/jorgeromero/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
@@ -18,11 +18,9 @@
     "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.abstractions/7.0.3/microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.0.3/microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.logging/7.0.3/microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
-    "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
-    "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/microsoft.identitymodel.tokens/7.0.3/microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "/Users/jorgeromero/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/jorgeromero/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/mongodb.bson/2.22.0/mongodb.bson.2.22.0.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/mongodb.driver/2.22.0/mongodb.driver.2.22.0.nupkg.sha512",
@@ -44,5 +42,24 @@
     "/Users/jorgeromero/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/jorgeromero/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "El paquete Microsoft.AspNetCore.OpenApi 7.0.12 no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El paquete Microsoft.AspNetCore.OpenApi 7.0.12 admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "El paquete Microsoft.AspNetCore.Authentication.JwtBearer 7.0.14 no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El paquete Microsoft.AspNetCore.Authentication.JwtBearer 7.0.14 admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
